@@ -15,7 +15,7 @@
             <button onclick="ejercicio3('noSe')">ejercicio 3</button>
             <button onclick="ejercicio4()">ejercicio 4</button>
             <button onclick="ejercicio5()">ejercicio 5</button>
-            <button>ejercicio 6</button>
+            <button onclick="ejercicio6()">ejercicio 6</button>
             <button>ejercicio 7</button>
             <button>ejercicio 8</button>
             <button>ejercicio 9</button>
@@ -71,22 +71,27 @@
             alert(mensaje);
         }
         function ejercicio4() {
-            let numero1;
-            let numero2;
-            numero1 = prompt("¿numro1?");
-            numero2 = prompt("¿numero2?");
+            let numero1 = prompt("¿numro1?");
+            let numero2 = prompt("¿numero2?");
             alert(numero1 + numero2);
         }
         function ejercicio5() {
-            let numero3;
-            let numero4;
-            let resultado2;
-            numero3 = prompt("¿numero3?");
-            numero4 = prompt("¿numero4?");
+            let numero3 = prompt("¿numero3?");
+            let numero4 = prompt("¿numero4?");
             numero3 = parseInt(numero3);
             numero4 = parseInt(numero4);
-            resultado2 = numero3 + numero4;
-            alert(resultado2);
+            alert(numero3 + numero4);
+        }
+        function ejercicio6() {
+            let numero5 = prompt("¿numero5?");
+            let numero6 = prompt("¿numero6?");
+            if (isNaN(numero5) == true || isNaN(numero6) == true) {
+                alert("SOLO SE PERMITEN NUMEROS");
+            } else {
+                numero5 = parseFloat(numero5);
+                numero6 = parseFloat(numero6);
+                alert(numero5 + numero6);
+            }
         }
     </script>
 </body>
