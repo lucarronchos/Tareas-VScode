@@ -16,7 +16,7 @@
             <button onclick="ejercicio4()">ejercicio 4</button>
             <button onclick="ejercicio5()">ejercicio 5</button>
             <button onclick="ejercicio6()">ejercicio 6</button>
-            <button>ejercicio 7</button>
+            <button onclick="ejercicio7()">ejercicio 7</button>
             <button>ejercicio 8</button>
             <button>ejercicio 9</button>
             <button>ejercicio 10</button>
@@ -91,6 +91,34 @@
                 numero5 = parseFloat(numero5);
                 numero6 = parseFloat(numero6);
                 alert(numero5 + numero6);
+            }
+        }
+        function ejercicio7() {
+            let diaSemana = prompt("¿Qué día es hoy?");
+            diaSemana = diaSemana.toLocaleLowerCase();
+            switch (diaSemana) {
+                case "lunes":
+                    alert("Hoy es Lunes");
+                    break;
+                case "martes":
+                    alert("Hoy es Martes");
+                    break;
+                case "miercoles":
+                    alert("Hoy es Miércoles");
+                    break;
+                case "jueves":
+                    alert("Hoy es Jueves");
+                    break;
+                case "viernes":
+                    alert("Hoy es Viernes");
+                    break;
+                case "sabado":
+                    alert("Hoy es Sábado");
+                    break;
+                case "domingo":
+                    alert("Hoy es Domingo");
+                default:
+                    alert("Pon un día de la semana");
             }
         }
     </script>
