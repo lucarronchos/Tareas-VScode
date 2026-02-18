@@ -19,10 +19,10 @@
             <button onclick="ejercicio7()">ejercicio 7</button>
             <button onclick="ejercicio8()">ejercicio 8</button>
             <button onclick="ejercicio9()">ejercicio 9</button>
-            <button>ejercicio 10</button>
-            <button>ejercicio 11</button>
-            <button>ejercicio 12</button>
-            <button>ejercicio 13</button>
+            <button onclick="ejercicio10()">ejercicio 10</button>
+            <button onclick="ejercicio11()">ejercicio 11</button>
+            <button onclick="ejercicio12()">ejercicio 12</button>
+            <button onclick="ejercicio13()">ejercicio 13</button>
             <button>ejercicio 14</button>
             <button>ejercicio 15</button>
             <button>ejercicio 16</button>
@@ -166,8 +166,35 @@
             }
         }
         function ejercicio10() {
-            for ()
+            let numero7 = prompt("Pon un número");
+            for (let multiplicacion = 1; multiplicacion < 11; multiplicacion++) {
+                alert(numero7 * multiplicacion);
+            }
         }
+        function ejercicio11() {
+            let compra = ["croquetas", "machete", "nose"];
+            for (let productos = 0; productos < compra.length; productos++) {
+                alert(compra[productos]);
+            }
+        }
+        function ejercicio12() {
+            for (let cuentaAtras = 10; cuentaAtras >= 0; cuentaAtras--) {
+                alert(cuentaAtras);
+            }
+            alert("Has perdido el juego");
+        }
+        function ejercicio13() {
+            let parImpar = prompt("Pon un número");
+            parImpar = parseInt(parImpar);
+            let suma = 0;
+            for (let zeroToPrompt = 0; zeroToPrompt <= parImpar; zeroToPrompt++) {
+                if (zeroToPrompt % 2 === 0) {
+                    suma += zeroToPrompt;
+                }
+            }
+            alert("La suma de todos los numeros pares entre " + "0" + " y " + parImpar + " es " + suma);
+        }
+
     </script>
 </body>
 
