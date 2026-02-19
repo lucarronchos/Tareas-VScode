@@ -23,10 +23,10 @@
             <button onclick="ejercicio11()">ejercicio 11</button>
             <button onclick="ejercicio12()">ejercicio 12</button>
             <button onclick="ejercicio13()">ejercicio 13</button>
-            <button>ejercicio 14</button>
+            <button onclick="ejercicio14()">ejercicio 14</button>
             <button>ejercicio 15</button>
-            <button>ejercicio 16</button>
-            <button>ejercicio 17</button>
+            <button onclick="ejercicio16()">ejercicio 16</button>
+            <button onclick="ejercicio17('Pedro')">ejercicio 17</button>
             <button>ejercicio 18</button>
             <button>ejercicio 19</button>
             <button>ejercicio 20</button>
@@ -187,14 +187,38 @@
             let parImpar = prompt("Pon un número");
             parImpar = parseInt(parImpar);
             let suma = 0;
-            for (let zeroToPrompt = 0; zeroToPrompt <= parImpar; zeroToPrompt++) {
-                if (zeroToPrompt % 2 === 0) {
-                    suma += zeroToPrompt;
+            if (isNaN(parImpar) == true) {
+                alert("Pon números");
+            } else {
+                for (let zeroToPrompt = 0; zeroToPrompt <= parImpar; zeroToPrompt++) {
+                    if (zeroToPrompt % 2 === 0) {
+                        suma += zeroToPrompt;
+                    }
                 }
+                alert("La suma de todos los numeros pares entre " + "0" + " y " + parImpar + " es " + suma);
             }
-            alert("La suma de todos los numeros pares entre " + "0" + " y " + parImpar + " es " + suma);
         }
-
+        /*
+        function ejercicio14() {
+            let numero8 = (1);
+        */
+        /*}
+        function ejercicio15() {
+         const invitados = ["Ana", "María", "Pedro", "Lucía"];
+         invitados.forEach
+        }*/
+        function ejercicio16() {
+            let random = Math.floor(Math.random()*6) + 1;
+            while (random != 6) {
+                alert("El número secreto no es " + random);
+                random = Math.floor(Math.random()*6) + 1;
+            }
+                alert("El número secreto es " + "6");
+        }
+        function ejercicio17() {
+            const invitados = ["Ana", "María", "Pedro", "Lucía"];
+            
+        }
     </script>
 </body>
 
